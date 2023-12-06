@@ -1,0 +1,218 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class CarpoolingTest {
+
+    @Test 
+    // UserRegistration
+    public void testUserRegistration() {
+        // Test Steps
+        boolean registrationFormLoaded = loadRegistrationForm();
+        boolean validUserInformationEntered = enterValidUserInformation();
+        boolean registrationFormSubmitted = submitRegistrationForm();
+        boolean confirmationPageDisplayed = verifyConfirmation();
+
+        // Expected Result
+        boolean allStepsExecutedSuccessfully = registrationFormLoaded && validUserInformationEntered &&  registrationFormSubmitted && confirmationPageDisplayed;
+        boolean expectedResultsMatchActualOutcomes = allStepsExecutedSuccessfully;
+
+        //verify
+        Assert.assertTrue(allStepsExecutedSuccessfully);
+        Assert.assertTrue(expectedResultsMatchActualOutcomes);
+       } 
+    
+    
+    private boolean loadRegistrationForm() {
+        // Implementation of loading registration form
+        System.out.println("Loading registration form...");
+        // Simulating form loading
+        return true;
+    }
+
+    private boolean enterValidUserInformation() {
+        // Implementation of entering valid user information
+        System.out.println("Entering valid user information...");
+        // Simulating entering user information
+        return true;
+    }
+
+    private boolean submitRegistrationForm() {
+        // Implementation of submitting registration form
+        System.out.println("Submitting registration form...");
+        // Simulating form submission
+        return true;
+    }
+
+    private boolean verifyConfirmation() {
+        // Implementation of verifying the registration confirmation page
+        System.out.println("Verifying registration confirmation...");
+        // Simulating confirmation page verification
+        return true;
+    }
+
+    
+                //RideRequest
+    @Test
+    public void testRideRequest() {
+        // Test Steps
+        boolean rideSelected = selectRide();
+        boolean rideRequestSent = sendRideRequest();
+        boolean rideAccepted = acceptRide();
+
+        // Expected Results
+        boolean allStepsExecutedSuccessfully =  rideSelected && rideRequestSent && rideAccepted;
+        boolean expectedResultsMatchActualOutcomes = allStepsExecutedSuccessfully;
+
+        // verify result
+        Assert.assertTrue(allStepsExecutedSuccessfully);
+        Assert.assertTrue(expectedResultsMatchActualOutcomes);
+    } 
+    
+      private boolean selectRide() {
+        // Implementation of selecting a ride
+        System.out.println("Selecting a ride...");
+        // Simulating ride selection
+        return true;
+    }
+
+    private boolean sendRideRequest() {
+        // Implementation of sending a ride request
+        System.out.println("Sending ride request...");
+        // Simulating ride request
+        return true;
+    }
+
+    private boolean acceptRide() {
+        // Implementation of accepting a ride
+        System.out.println("Accepting ride...");
+        // Simulating ride acceptance
+        return true;
+    }
+
+    
+    
+    
+    
+    
+            //DriverOffer
+    @Test
+    public void testDriverOffer() {
+        // Test Steps
+        boolean rideDetailsProvided = provideRideDetails();
+        boolean offerRide = offerRide();
+        boolean rideOffered = confirmRideOffer();
+
+        // Expected Results
+        boolean allStepsExecutedSuccessfully = rideDetailsProvided && offerRide && rideOffered;
+        boolean expectedResultsMatchActualOutcomes = allStepsExecutedSuccessfully;
+
+        //verify
+        Assert.assertTrue(allStepsExecutedSuccessfully);
+        Assert.assertTrue(expectedResultsMatchActualOutcomes);
+    }
+      private boolean provideRideDetails() {
+        // Implementation of providing ride details
+        System.out.println("Providing ride details...");
+        // Simulating ride details provision
+        return true;
+    }
+
+    private boolean offerRide() {
+        // Implementation of offering a ride
+        System.out.println("Offering ride...");
+        // Simulating ride offer
+        return true;
+    }
+
+    private boolean confirmRideOffer() {
+        // Implementation of confirming ride offer
+        System.out.println("Confirming ride offer...");
+        // Simulating ride offer confirmation
+        return true;
+    }
+
+   
+
+            //Tracking
+    @Test
+    public void testRealTimeTracking() {
+        // Test Steps
+        boolean rideStarted = startRide();
+        boolean realTimeLocationReceived = receiveRealTimeLocation();
+        boolean rideCompleted = completeRide();
+
+        // Expected Results
+        boolean allStepsExecutedSuccessfully =
+                rideStarted && realTimeLocationReceived && rideCompleted;
+        boolean expectedResultsMatchActualOutcomes = allStepsExecutedSuccessfully;
+
+        // verify
+        Assert.assertTrue(allStepsExecutedSuccessfully);
+        Assert.assertTrue(expectedResultsMatchActualOutcomes);
+    } 
+    
+     private boolean startRide() {
+        // Implementation ofstarting a ride
+        System.out.println("Starting ride...");
+        // Simulating ride start
+        return true;
+    }
+
+ 
+     private boolean receiveRealTimeLocation() {
+        // Implementation of receiving real-time location
+        System.out.println("Receiving real-time location...");
+        // Simulating location reception
+        return true;
+    }
+
+    private boolean completeRide() {
+        // Implementation of completing a ride
+        System.out.println("Completing ride...");
+        // Simulating ride completion
+        return true;
+    }
+
+   
+    //Payment
+    @Test
+    public void testPaymentProcessing() {
+        // Test Steps
+        boolean fareCalculated = calculateFare();
+        boolean paymentInitiated = initiatePayment();
+        boolean paymentProcessed = processPayment();
+
+        // Expected Results
+        boolean allStepsExecutedSuccessfully =
+                fareCalculated && paymentInitiated && paymentProcessed;
+        boolean expectedResultsMatchActualOutcomes = allStepsExecutedSuccessfully;
+
+        //verify
+        Assert.assertTrue(allStepsExecutedSuccessfully);
+        Assert.assertTrue(expectedResultsMatchActualOutcomes);
+    }
+    
+    
+    
+     private boolean calculateFare() {
+        // Implementation of calculating fare
+        System.out.println("Calculating fare...");
+        // Simulating fare calculation
+        return true;
+    }    
+
+     
+    private boolean initiatePayment() {
+        // Implementation of initiating payment
+        System.out.println("Initiating payment...");
+        // Simulating payment initiation
+        return true;
+    }
+
+    private boolean processPayment() {
+        // Implementation of processing payment
+        System.out.println("Processing payment...");
+        // Simulating payment processing
+        return true;
+    }  
+}
