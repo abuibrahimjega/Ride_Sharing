@@ -5,8 +5,6 @@ import java.awt.event.ActionListener;
 
 public class CarpoolingGUI {
     private JFrame frame;
-
-    // User Registration components
     private JTextField usernameField;
     private JButton registerButton;
 
@@ -15,10 +13,7 @@ public class CarpoolingGUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 200);
 
-        // Initialize User Registration components
         initializeUserRegistration();
-
-        // Set layout and add components
         frame.setLayout(new GridLayout(2, 1));
         frame.add(usernameField);
         frame.add(registerButton);
@@ -29,8 +24,6 @@ public class CarpoolingGUI {
     private void initializeUserRegistration() {
         usernameField = new JTextField();
         registerButton = new JButton("Register");
-
-        // Register button action listener
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
